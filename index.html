@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Project</title>
+    <style>
+       body{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+       .container{
+         display: grid;
+         width: 780px;
+         height: 780px;
+         background-color: black;
+         gap: 4px;
+         grid-template-rows: 90px 110px 120px 120px 200px;
+         grid-template-columns: 120px 120px 200px 100px 110px 110px;
+       }
+       .item{
+        background-color: aliceblue;
+        display: grid;
+       }
+       .one{
+        grid-column: span 2;
+        grid-row: span 3;
+       }
+       .two{
+        grid-column: span 2;
+       }
+       .three{
+        grid-row: span 2;
+       }
+       .four{
+        background-color: yellow;
+       }
+       .five{
+        grid-column: span 2;
+        grid-row: span 3;
+       }
+      .seven{
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .eight{
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+      .nine{
+        grid-row: span 2;
+        background-color: blue;
+      }
+      .eleven{
+        grid-column: span 2;
+        background-color: yellow;
+      }
+      .thirteen{
+        background-color: red;
+      }
+      .fourteen{
+        grid-column-end: 7;
+        grid-column-start: 4;
+      }
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+        <div class="item four"></div>
+        <div class="item five"></div>
+        <div class="item six"></div>
+        <div class="item seven"></div>
+        <div class="item eight"></div>
+        <div class="item nine"></div>
+        <div class="item ten"></div>
+        <div class="item eleven"></div>
+        <div class="item twelve"></div>
+        <div class="item thirteen"></div>
+        <div class="item fourteen"></div>
+    </div>
+</body>
+</html>
